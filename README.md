@@ -1,6 +1,14 @@
 # djx
 Common utilities and dependencies for the modern Django project.
 
+## database
+
+Helpers for parsing database connection strings into Django-compatible database configuration. Uses `dj-database-url`.
+
+### parse(url)
+
+Parse the given database URL.
+
 ## environment
 
 Helpers for pulling in environment variables.
