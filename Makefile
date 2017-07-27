@@ -1,5 +1,4 @@
 INSTALL_DIR := ./build
-VERSION := 0.0.1
 
 install: $(INSTALL_DIR)/bin/activate
 
