@@ -25,7 +25,7 @@ def get_boolean(key, default=False):
 
 def get_string(key, default=''):
     """Return environment value as a string."""
-    return os.environ.get(key, '')
+    return os.environ.get(key, default)
 
 
 def get_list(key, default=None, separator=','):

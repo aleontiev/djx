@@ -68,5 +68,5 @@ setup(
     install_requires=install_requires,
     dependency_links=dependency_links,
     url='http://github.com/aleontiev/djx',
-    version='0.0.2'
+    version='0.0.3'
 )
