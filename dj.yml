@@ -1,0 +1,5 @@
+devRequirements: requirements.txt.dev
+localRequirements: requirements.txt.local
+name: djx
+requirements: requirements.txt
+runtime: system

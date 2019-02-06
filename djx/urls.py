@@ -35,7 +35,8 @@ def load_urls(relative, namespace=True):
             try:
                 urls = importlib.import_module(module_name)
             except ImportError as e:
-                if str(e).startswith('No module named urls'):
+                e = str(e)
+                if e.startswith('No module named') and 'urls' in e:
                     continue
                 else:
                     raise
