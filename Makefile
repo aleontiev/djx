@@ -2,8 +2,8 @@ INSTALL_DIR := ./build
 
 install: $(INSTALL_DIR)/bin/activate
 
-pypi_upload: install
-	@. $(INSTALL_DIR)/bin/activate; python setup.py sdist upload -r pypi
+pypi: install
+	@. $(INSTALL_DIR)/bin/activate; python setup.py sdist bdist_wheel; twine upload dist/*
 
 $(INSTALL_DIR)/bin/activate: requirements.txt requirements.txt.dev setup.py
 	@test -d $(INSTALL_DIR) || virtualenv $(INSTALL_DIR)
