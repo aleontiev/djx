@@ -48,9 +48,11 @@ def get_dependencies(file):
 
     return install_requires, dependency_links
 
+
 dependencies = get_dependencies('requirements.txt')
 install_requires = list(dependencies[0].values())
 dependency_links = list(dependencies[1].values())
+
 
 setup(
     author='Anthony Leontiev',

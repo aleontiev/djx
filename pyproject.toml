@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "djx"
+version = "0.0.6"
+description = "Common utilities and dependencies for the modern Django project"
+authors = ["aleontiev <alonetiev@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3"
+django = "*"
+dj-database-url = "*"
+dj-static = "*"
+gunicorn = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+requests = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
