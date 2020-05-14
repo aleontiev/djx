@@ -49,8 +49,8 @@ def get_dependencies(file):
     return install_requires, dependency_links
 
 dependencies = get_dependencies('requirements.txt')
-install_requires = dependencies[0].values()
-dependency_links = dependencies[1].values()
+install_requires = list(dependencies[0].values())
+dependency_links = list(dependencies[1].values())
 
 setup(
     author='Anthony Leontiev',
@@ -68,5 +68,5 @@ setup(
     install_requires=install_requires,
     dependency_links=dependency_links,
     url='http://github.com/aleontiev/djx',
-    version='0.0.5'
+    version='0.0.6'
 )

@@ -70,7 +70,7 @@ def humanize(value, sep=u', '):
     if value is None:
         value = u'null'
     elif type(value) == bool:
-        value = unicode(value).lower()
+        value = str(value).lower()
     elif isinstance(value, six.string_types):
         pass
     elif isinstance(value, list):
@@ -81,5 +81,5 @@ def humanize(value, sep=u', '):
                 for k, v in six.iteritems(value)]
         )
     else:
-        value = unicode(value)
+        value = str(value)
     return value

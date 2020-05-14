@@ -7,7 +7,7 @@ from django.utils import six
 try:
     # py2
     from urlparse import urlparse
-except:
+except Exception:
     # py3
     from urllib.parse import urlparse
 
